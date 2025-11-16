@@ -1,152 +1,455 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Yvette & Yohan — Unidos por uma escola melhor</title>
-  <meta name="description" content="Yvette e Yohan: novas ideias, novas oportunidades. Unidos por uma escola melhor!" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">
-        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="48" fill="var(--accent)" />
-          <text x="50" y="58" text-anchor="middle" font-size="36" font-family="Verdana" fill="var(--bg)">Y&Y</text>
-        </svg>
-        <span class="brand-text">Yvette & Yohan</span>
-      </a>
-      <nav class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#propostas">Propostas</a>
-        <a href="#ajudar">Como Ajudar</a>
-        <a class="cta" href="#ajudar">Apoie</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-photo">
-          <!-- Substitua o src pela foto real dos dois -->
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Yvette e Yohan sorrindo" />
-        </div>
-        <div class="hero-content">
-          <h1>Unidos por uma escola melhor!</h1>
-          <p class="lead">Yvette e Yohan acreditam que todos têm voz e que juntos podemos fazer a diferença.</p>
-          <p class="tagline">Novas ideias, novas oportunidades!</p>
-          <div class="hero-actions">
-            <a class="btn" href="#propostas">Nossas Propostas</a>
-            <a class="btn outline" href="#ajudar">Como Ajudar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="section about">
-      <div class="container">
-        <h2>Sobre os candidatos</h2>
-        <p class="muted">Conheça um pouco sobre quem está por trás da campanha — com jeito leve e objetivo.</p>
-        <div class="cards">
-          <article class="card">
-            <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Yvette" />
-            <h3>Yvette</h3>
-            <p class="small">Apaixonada por arte e comunicação. Liderou projetos de arte na escola, exposições e oficinas criativas.</p>
-            <ul class="achievements">
-              <li>Fundou clube de artes</li>
-              <li>Organizou exposição estudantil</li>
-            </ul>
-          </article>
-          <article class="card">
-            <img class="avatar" src="https://images.unsplash.com/photo-1545996124-1b0d7f9a9c6f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Yohan" />
-            <h3>Yohan</h3>
-            <p class="small">Entusiasta de esportes e tecnologia. Criou iniciativas esportivas e projetos de tecnologia para alunos.</p>
-            <ul class="achievements">
-              <li>Organizou torneios estudantis</li>
-              <li>Oficinas de robótica e programação</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="propostas" class="section proposals">
-      <div class="container">
-        <h2>Propostas principais</h2>
-        <p class="muted">Ações diretas, fáceis de entender e com impacto real.</p>
-        <div class="proposal-list">
-          <div class="proposal">
-            <div class="icon">🎉</div>
-            <div>
-              <h4>Mais eventos estudantis</h4>
-              <p>Feiras, festivais e atividades para integrar estudantes e valorizar talentos.</p>
-            </div>
-          </div>
-
-          <div class="proposal">
-            <div class="icon">💬</div>
-            <div>
-              <h4>Melhor comunicação</h4>
-              <p>Canal direto entre alunos e professores com reuniões periódicas e sugestões online.</p>
-            </div>
-          </div>
-
-          <div class="proposal">
-            <div class="icon">🏫</div>
-            <div>
-              <h4>Melhorias nos espaços</h4>
-              <p>Reformas e pequenas melhorias nos espaços comuns para tornar a escola mais acolhedora.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ajudar" class="section help">
-      <div class="container">
-        <h2>Como ajudar / participar</h2>
-        <p class="muted">Pequenas ações fazem grande diferença — participe!</p>
-        <ul class="help-list">
-          <li>Siga-nos nas redes: <a href="#" class="link">Instagram / Facebook da escola</a></li>
-          <li>Visite nossa barraca nas feiras e eventos</li>
-          <li>Deixe sua sugestão: <a href="mailto:contato@example.com" class="link">contato@example.com</a></li>
-        </ul>
-        <div class="help-actions">
-          <a class="btn" href="mailto:contato@example.com">Enviar Sugestão</a>
-          <a class="btn outline" href="#">Seguir</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Yvette & Yohan — Unidos por uma escola melhor</p>
-    </div>
-  </footer>
-
-  <script>
-    // Pequena interação: menu mobile + ano atual
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-    });
-    // Smooth scroll for in-page links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({behavior:'smooth', block:'start'});
-          if(nav.classList.contains('nav-open')) nav.classList.remove('nav-open');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPA LA BELLE VIE - Grêmio Estudantil</title>
+    <style>
+        /* ======================================
+           PALETA PASTEL Y2K
+        =======================================*/
+        :root {
+            --rosa-choque: #FF9ACB; 
+            --amarelo-brilhante: #FFF59D;
+            --azul-brilhante: #90CAF9;
+            --laranja: #FFCC80;
+            --roxo: #B39DDB;
+            --roxo-escuro: #5E35B1;
+            --borda-grossa: 4px solid black;
         }
-      });
-    });
-  </script>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            color: var(--roxo-escuro);
+            line-height: 1.6;
+        }
+
+        /* Fonte estilo digital */
+        .y2k-font {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Botões estilo Sticker */
+        .y2k-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: var(--borda-grossa);
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px black;
+            transition: 0.1s;
+        }
+
+        .y2k-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px black;
+        }
+
+        /* ======================================
+           HEADER
+        =======================================*/
+        header {
+            background-color: white;
+            padding: 15px 0;
+            border-bottom: var(--borda-grossa);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.2em;
+        }
+
+        .logo span {
+            background-image: linear-gradient(
+                90deg,
+                var(--rosa-choque),
+                var(--amarelo-brilhante),
+                var(--azul-brilhante)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 300%;
+            animation: gradientShift 6s ease-in-out infinite;
+        }
+
+        nav a {
+            margin-left: 15px;
+            font-size: 1.1em;
+        }
+
+        .nav-inicio { background-color: var(--amarelo-brilhante); }
+        .nav-propostas { background-color: var(--azul-brilhante); }
+        .nav-chapa { background-color: var(--rosa-choque); }
+        .nav-contato { background-color: var(--roxo); color: white; }
+        .nav-agenda { background-color: var(--laranja); }
+
+        /* ======================================
+           HERO SECTION
+        =======================================*/
+        .hero-section {
+            display: flex;
+            position: relative;
+            min-height: 550px;
+            border-bottom: var(--borda-grossa);
+            box-shadow: 0 0 0 rgba(255, 154, 203, 0.3);
+            animation: y2kGlow 2.2s ease-in-out infinite alternate;
+        }
+
+        .hero-split-yvette {
+            flex: 1;
+            background-color: var(--rosa-choque);
+            background-image: radial-gradient(white 10%, transparent 11%), radial-gradient(white 10%, transparent 11%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            border-right: var(--borda-grossa);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .hero-split-yohan {
+            flex: 1;
+            background-color: var(--azul-brilhante);
+            background-image: repeating-linear-gradient(
+                45deg,
+                rgba(255,255,255,0.25) 0,
+                rgba(255,255,255,0.25) 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .hero-split-yvette h2,
+        .hero-split-yohan h2 {
+            color: white;
+            font-size: 1.8em;
+            margin: 20px 0 30px;
+            border: 3px solid white;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        /* Quadrados de imagem */
+        .image-placeholder {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            border: 3px solid black;
+        }
+
+        /* YVETTE – usa a imagem enviada */
+        .yvette-img {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: floatSticker 3s ease-in-out infinite;
+        }
+
+        .yvette-img img {
+            max-height: 230px;
+            height: auto;
+            width: auto;
+            filter: drop-shadow(0 0 6px rgba(0,0,0,0.5));
+        }
+
+        /* YOHAN – placeholder simples por enquanto */
+        .yohan-img {
+            background-color: rgba(255,255,255,0.4);
+        }
+
+        /* Mensagem Central */
+        .central-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            background-color: var(--laranja);
+            padding: 15px 30px;
+            border: var(--borda-grossa);
+            border-radius: 40px;
+            box-shadow: 6px 6px 0px black;
+            font-size: 1.5em;
+            white-space: nowrap;
+            z-index: 10;
+            animation: textFlicker 1.8s ease-in-out infinite alternate;
+        }
+
+        /* ======================================
+           PROPOSTAS
+        =======================================*/
+        .propostas-destaque {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .propostas-destaque h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--roxo);
+            text-decoration: underline var(--rosa-choque) 5px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .proposta-card {
+            flex: 1;
+            padding: 30px;
+            border: var(--borda-grossa);
+            border-radius: 15px;
+            font-size: 1.3em;
+            font-weight: 900;
+            text-transform: uppercase;
+            box-shadow: 8px 8px 0px var(--roxo-escuro);
+            cursor: pointer;
+            transition: 0.12s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proposta-card:hover {
+            transform: translate(2px, 2px) scale(1.02);
+            box-shadow: 4px 4px 0px var(--roxo-escuro);
+        }
+
+        /* brilhinhos Y2K nos cards */
+        .proposta-card::after {
+            content: "";
+            position: absolute;
+            top: -40%;
+            left: -60%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.6) 0, transparent 60%);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-100%);
+            transition: 0.3s;
+        }
+
+        .proposta-card:hover::after {
+            opacity: 1;
+            transform: translateX(20%);
+        }
+
+        .card-amarelo { background-color: var(--amarelo-brilhante); }
+        .card-rosa { background-color: var(--rosa-choque); }
+        .card-azul { background-color: var(--azul-brilhante); }
+
+        .proposta-card span {
+            display: block;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        /* ======================================
+           FOOTER
+        =======================================*/
+        footer {
+            background-color: var(--roxo);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-top: var(--borda-grossa);
+        }
+
+        footer a {
+            color: var(--azul-brilhante);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* ======================================
+           ANIMAÇÕES Y2K
+        =======================================*/
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes y2kGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(255, 154, 203, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 25px rgba(144, 202, 249, 0.8);
+            }
+        }
+
+        @keyframes floatSticker {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textFlicker {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.9;
+                filter: drop-shadow(0 0 4px #FFFFFF);
+            }
+            40% {
+                transform: translate(-50%, -50%) scale(1.03);
+                opacity: 1;
+                filter: drop-shadow(0 0 10px #FFFFFF);
+            }
+            70% {
+                opacity: 0.85;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.02);
+                opacity: 1;
+                filter: drop-shadow(0 0 14px #FFFFFF);
+            }
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero-section { flex-direction: column; }
+            .hero-split-yvette { border-right: none; border-bottom: var(--borda-grossa); }
+            .cards-container { flex-direction: column; }
+            nav a { display: block; margin: 8px 0; }
+            .central-message {
+                font-size: 1.2em;
+                white-space: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo y2k-font">
+            <span>CHAPA LA BELLE VIE</span>
+        </div>
+
+        <nav>
+            <a href="#" class="y2k-button nav-inicio">Início</a>
+            <a href="#" class="y2k-button nav-propostas">Propostas</a>
+            <a href="#" class="y2k-button nav-chapa">Conheça a Chapa</a>
+            <a href="#" class="y2k-button nav-contato">Contato</a>
+            <a href="#" class="y2k-button nav-agenda">✨ Agenda ✨</a>
+        </nav>
+    </div>
+</header>
+
+<main class="hero-section">
+    
+    <!-- Lado Yvette -->
+    <div class="hero-split-yvette">
+        <div class="image-placeholder yvette-img">
+            <!-- Coloque a imagem na mesma pasta e use esse nome -->
+            <img src="yvette-sticker.png" alt="Yvette Florian - Chapa La Belle Vie">
+        </div>
+        <h2 class="y2k-font">YVETTE FLORIAN: Inovação e Ação</h2>
+        <a href="#" class="y2k-button" style="background-color: var(--amarelo-brilhante);">
+            Propostas da Yvette
+        </a>
+    </div>
+
+    <!-- Lado Yohan -->
+    <div class="hero-split-yohan">
+        <div class="image-placeholder yohan-img"></div>
+        <h2 class="y2k-font">YOHAN ASHLEY: Bem-Estar e União</h2>
+        <a href="#" class="y2k-button" style="background-color: var(--azul-brilhante);">
+            Propostas do Yohan
+        </a>
+    </div>
+
+    <div class="central-message y2k-font">
+        O GRÊMIO QUE VOCÊ MERECE!
+    </div>
+
+</main>
+
+<section class="propostas-destaque">
+    <h2>🗳️ Nossas Propostas em Destaque 🗳️</h2>
+
+    <div class="container cards-container">
+        
+        <div class="proposta-card card-amarelo">
+            <span>✨</span>
+            Cursos Extras
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Oficinas e workshops para complementar o aprendizado.
+            </p>
+        </div>
+
+        <div class="proposta-card card-rosa">
+            <span>🎀</span>
+            Eventos Temáticos
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Festas e gincanas divertidas durante o ano letivo.
+            </p>
+        </div>
+
+        <div class="proposta-card card-azul">
+            <span>📱</span>
+            Plataforma Online
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Sistema de votação e comunicação transparente.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p class="y2k-font">Conecte-se com a gente!</p>
+    <p>
+        <a href="#">📷 Instagram</a> |
+        <a href="#">🎶 TikTok</a> |
+        <a href="mailto:contato@labellevie.com">📧 contato@labellevie.com</a>
+    </p>
+    <p style="font-size: 0.8em;">
+        © 2025 Chapa La Belle Vie. Todos os direitos reservados.
+    </p>
+</footer>
+
 </body>
-</html>
+  </html>
