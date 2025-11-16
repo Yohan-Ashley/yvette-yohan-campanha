@@ -322,6 +322,537 @@
             animation: floatSticker 3s ease-in-out infinite;
         }
 
+        .bottons-image img {
+            max-width: 90%;
+            max-height: 90%;
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.4));
+        }
+
+        .bottons-info {
+            flex: 2;
+            min-width: 280px;
+            padding: 20px;
+            font-size: 1.1em;
+            color: var(--roxo-escuro);
+        }
+
+        .bottons-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.6em;
+            color: var(--rosa-choque);
+        }
+
+        .bottons-info p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .responsavel {
+            font-size: 1.2em;
+            padding: 10px;
+            border-left: var(--borda-grossa);
+            background-color: var(--amarelo-brilhante);
+            box-shadow: 4px 4px 0px black;
+        }
+
+        /* ======================================
+           FOOTER
+        =======================================*/
+        footer {
+            background-color: var(--roxo);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-top: var(--borda-grossa);
+        }
+
+        footer a {
+            color: var(--azul-brilhante);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* ======================================
+           ANIMAÇÕES Y2K
+        =======================================*/
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes y2kGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(255, 154, 203, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 25px rgba(144, 202, 249, 0.8);
+            }
+        }
+
+        @keyframes floatSticker {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textFlicker {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.9;
+                filter: drop-shadow(0 0 4px #FFFFFF);
+            }
+            40% {
+                transform: translate(-50%, -50%) scale(1.03);
+                opacity: 1;
+                filter: drop-shadow(0 0 10px #FFFFFF);
+            }
+            70% {
+                opacity: 0.85;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.02);
+                opacity: 1;
+                filter: drop-shadow(0 0 14px #FFFFFF);
+            }
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero-section { flex-direction: column; }
+            .hero-split-yvette { border-right: none; border-bottom: var(--borda-grossa); }
+            .cards-container { flex-direction: column; }
+            nav a { display: block; margin: 8px 0; }
+            .central-message {
+                font-size: 1.2em;
+                white-space: normal;
+            }
+            .bottons-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+            .bottons-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo y2k-font">
+            <span>CHAPA LA BELLE VIE</span>
+        </div>
+
+        <nav>
+            <a href="#" class="y2k-button nav-inicio">Início</a>
+            <a href="#propostas" class="y2k-button nav-propostas">Propostas</a>
+            <a href="#bottons" class="y2k-button nav-bottons">Bottons &amp; Panfletos</a>
+            <a href="#" class="y2k-button nav-chapa">Conheça a Chapa</a>
+            <a href="#" class="y2k-button nav-contato">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main class="hero-section">
+    
+    <!-- Lado Yvette -->
+    <div class="hero-split-yvette">
+        <div class="image-placeholder yvette-img">
+            <img 
+                src="https://github.com/user-attachments/assets/fa3c758b-1397-4a4b-99c0-621afcf840d3" 
+                alt="Yvette Florian - Chapa La Belle Vie">
+        </div>
+        <h2 class="y2k-font">YVETTE FLORIAN: Inovação e Ação</h2>
+        <a href="#" class="y2k-button" style="background-color: var(--amarelo-brilhante);">
+            Propostas da Yvette
+        </a>
+    </div>
+
+    <!-- Lado Yohan -->
+    <div class="hero-split-yohan">
+        <div class="image-placeholder yohan-img"></div>
+        <h2 class="y2k-font">YOHAN ASHLEY: Bem-Estar e União</h2>
+        <a href="#" class="y2k-button" style="background-color: var(--azul-brilhante);">
+            Propostas do Yohan
+        </a>
+    </div>
+
+    <div class="central-message y2k-font">
+        O GRÊMIO QUE VOCÊ MERECE!
+    </div>
+
+</main>
+
+<section id="propostas" class="propostas-destaque">
+    <h2>🗳️ NOSSAS PROPOSTAS EM DESTAQUE 🗳️</h2>
+
+    <div class="container cards-container">
+        
+        <div class="proposta-card card-amarelo">
+            <span>✨</span>
+            Mudanças Necessárias 
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Maior acessibilidade para estudantes e reforma nos preços para bolsistas.
+            </p>
+        </div>
+
+        <div class="proposta-card card-rosa">
+            <span>🎀</span>
+            Eventos Temáticos
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Festas e gincanas divertidas durante o ano letivo.
+            </p>
+        </div>
+
+        <div class="proposta-card card-azul">
+            <span>📱</span>
+            Plataforma Online
+            <p style="font-size: 0.8em; font-weight: normal;">
+                Sistema de votação e comunicação transparente.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="bottons" class="bottons-section">
+    <div class="container">
+        <h2 class="y2k-font bottons-title">🎀 Bottons &amp; Panfletos 🎀</h2>
+
+        <div class="bottons-wrapper">
+
+            <div class="bottons-image">
+                <!-- Imagem oficial do bottom -->
+                <img 
+                    src="https://github.com/user-attachments/assets/e0d521bf-d773-4e76-8d68-8f40b1ed6ac7" 
+                    alt="Bottom da Chapa La Belle Vie">
+            </div>
+
+            <div class="bottons-info">
+                <h3 class="y2k-font">Entrega Oficial</h3>
+                <p>
+                    Distribuição de bottons exclusivos e panfletos informativos da nossa chapa.
+                    Pegue o seu e ajude a espalhar nosso movimento pela escola!
+                </p>
+
+                <p class="responsavel">
+                    <strong>Responsável:</strong> Zenjiro Zei
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="y2k-font">Conecte-se com a gente!</p>
+    <p>
+        <a href="#">📷 Instagram</a> |
+        <a href="#">🎶 TikTok</a> 
+    </p>
+    <p style="font-size: 0.8em;">
+        © 2025 Chapa La Belle Vie. Todos os direitos reservados.
+    </p>
+</footer>
+
+</body>
+</html>            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px black;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Botões estilo Sticker */
+        .y2k-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: var(--borda-grossa);
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px black;
+            transition: 0.1s;
+        }
+
+        .y2k-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px black;
+        }
+
+        /* ======================================
+           HEADER
+        =======================================*/
+        header {
+            background-color: white;
+            padding: 15px 0;
+            border-bottom: var(--borda-grossa);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.2em;
+        }
+
+        .logo span {
+            background-image: linear-gradient(
+                90deg,
+                var(--rosa-choque),
+                var(--amarelo-brilhante),
+                var(--azul-brilhante)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 300%;
+            animation: gradientShift 6s ease-in-out infinite;
+        }
+
+        nav a {
+            margin-left: 15px;
+            font-size: 1.1em;
+        }
+
+        .nav-inicio  { background-color: var(--amarelo-brilhante); }
+        .nav-propostas { background-color: var(--azul-brilhante); }
+        .nav-bottons { background-color: var(--laranja); }
+        .nav-chapa { background-color: var(--rosa-choque); }
+        .nav-contato { background-color: var(--roxo); color: white; }
+
+        /* ======================================
+           HERO SECTION
+        =======================================*/
+        .hero-section {
+            display: flex;
+            position: relative;
+            min-height: 550px;
+            border-bottom: var(--borda-grossa);
+            box-shadow: 0 0 0 rgba(255, 154, 203, 0.3);
+            animation: y2kGlow 2.2s ease-in-out infinite alternate;
+        }
+
+        .hero-split-yvette {
+            flex: 1;
+            background-color: var(--rosa-choque);
+            background-image: radial-gradient(white 10%, transparent 11%), radial-gradient(white 10%, transparent 11%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            border-right: var(--borda-grossa);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .hero-split-yohan {
+            flex: 1;
+            background-color: var(--azul-brilhante);
+            background-image: repeating-linear-gradient(
+                45deg,
+                rgba(255,255,255,0.25) 0,
+                rgba(255,255,255,0.25) 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .hero-split-yvette h2,
+        .hero-split-yohan h2 {
+            color: white;
+            font-size: 1.8em;
+            margin: 20px 0 30px;
+            border: 3px solid white;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        /* Quadrados de imagem */
+        .image-placeholder {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            border: 3px solid black;
+        }
+
+        /* YVETTE – usa a imagem enviada */
+        .yvette-img {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: floatSticker 3s ease-in-out infinite;
+        }
+
+        .yvette-img img {
+            max-height: 230px;
+            height: auto;
+            width: auto;
+            filter: drop-shadow(0 0 6px rgba(0,0,0,0.5));
+        }
+
+        /* YOHAN – placeholder simples por enquanto */
+        .yohan-img {
+            background-color: rgba(255,255,255,0.4);
+        }
+
+        /* Mensagem Central */
+        .central-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            background-color: var(--laranja);
+            padding: 15px 30px;
+            border: var(--borda-grossa);
+            border-radius: 40px;
+            box-shadow: 6px 6px 0px black;
+            font-size: 1.5em;
+            white-space: nowrap;
+            z-index: 10;
+            animation: textFlicker 1.8s ease-in-out infinite alternate;
+        }
+
+        /* ======================================
+           PROPOSTAS
+        =======================================*/
+        .propostas-destaque {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .propostas-destaque h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--roxo);
+            text-decoration: underline var(--rosa-choque) 5px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .proposta-card {
+            flex: 1;
+            padding: 30px;
+            border: var(--borda-grossa);
+            border-radius: 15px;
+            font-size: 1.3em;
+            font-weight: 900;
+            text-transform: uppercase;
+            box-shadow: 8px 8px 0px var(--roxo-escuro);
+            cursor: pointer;
+            transition: 0.12s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proposta-card:hover {
+            transform: translate(2px, 2px) scale(1.02);
+            box-shadow: 4px 4px 0px var(--roxo-escuro);
+        }
+
+        .proposta-card::after {
+            content: "";
+            position: absolute;
+            top: -40%;
+            left: -60%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.6) 0, transparent 60%);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-100%);
+            transition: 0.3s;
+        }
+
+        .proposta-card:hover::after {
+            opacity: 1;
+            transform: translateX(20%);
+        }
+
+        .card-amarelo { background-color: var(--amarelo-brilhante); }
+        .card-rosa    { background-color: var(--rosa-choque); }
+        .card-azul    { background-color: var(--azul-brilhante); }
+
+        .proposta-card span {
+            display: block;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        /* ======================================
+           SEÇÃO DE BOTTONS & PANFLETOS
+        =======================================*/
+        .bottons-section {
+            padding: 50px 20px;
+            border-top: var(--borda-grossa);
+            border-bottom: var(--borda-grossa);
+            background-color: #FFFFFF;
+        }
+
+        .bottons-title {
+            font-size: 2em;
+            color: var(--roxo-escuro);
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 3px 3px 0px var(--rosa-choque);
+        }
+
+        .bottons-wrapper {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .bottons-image {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            height: 350px;
+            border: var(--borda-grossa);
+            background-color: var(--azul-brilhante);
+            border-radius: 20px;
+            box-shadow: 8px 8px 0px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: floatSticker 3s ease-in-out infinite;
+        }
+
         .bottons-image img {<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/e0d521bf-d773-4e76-8d68-8f40b1ed6ac7" />
             max-width: 90%;
             max-height: 90%;
